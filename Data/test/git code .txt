@@ -1,0 +1,20 @@
+-- cara buat gitignore via cmd --
+cd url
+dotnet new gitignore
+
+-- kalau belum pernah pakai git --
+git init
+git remote add origin [URL]
+
+-- push --
+git remote -v
+git add .
+git status
+git commit -m "initiate"
+git push -u origin master
+
+
+-- active git igonre --
+git rm -r --cached .
+git add .
+git commit -am "Remove ignored files"
